@@ -1,0 +1,238 @@
+<svg width="1180" height="610" viewBox="0 0 1180 610"
+xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#030712"/>
+    <stop offset="100%" stop-color="#0F172A"/>
+  </linearGradient>
+  <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#7C3AED"/>
+    <stop offset="50%" stop-color="#22D3EE"/>
+    <stop offset="100%" stop-color="#10B981">
+      <animate attributeName="stop-color"
+        values="#10B981;#7C3AED;#22D3EE;#10B981" dur="6s" repeatCount="indefinite"/>
+    </stop>
+    <animateTransform attributeName="gradientTransform" type="translate"
+      values="-220 0;220 0;-220 0" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#22D3EE">
+      <animate attributeName="stop-color"
+        values="#22D3EE;#7C3AED;#22D3EE" dur="4s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#7C3AED">
+      <animate attributeName="stop-color"
+        values="#7C3AED;#22D3EE;#7C3AED" dur="4s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+  <radialGradient id="glowA">
+    <stop offset="0%" stop-color="#7C3AED" stop-opacity=".28"/>
+    <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowB">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity=".22"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowC">
+    <stop offset="0%" stop-color="#10B981" stop-opacity=".16"/>
+    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="7"
+    flood-opacity=".28"/></filter>
+  <filter id="smallGlow">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="clip"><rect width="1180" height="610" rx="26"/></clipPath>
+</defs>
+
+<g clip-path="url(#clip)">
+  <rect width="1180" height="610" fill="url(#bgGrad)"/>
+
+  <!-- floating background glows -->
+  <circle cx="140" cy="100" r="220" fill="url(#glowA)" filter="url(#blur)">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;25 28;0 0" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="970" cy="490" r="250" fill="url(#glowB)" filter="url(#blur)">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;-25 -15;0 0" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="70" r="180" fill="url(#glowC)" filter="url(#blur)">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;15 20;0 0" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- particles -->
+  <g fill="#22D3EE" opacity=".5">
+    <circle cx="110" cy="500" r="2"><animate attributeName="cy" values="500;460;500"
+      dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="550" r="1.5"><animate attributeName="cy" values="550;510;550"
+      dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="115" r="1.8"><animate attributeName="cy" values="115;85;115"
+      dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1090" cy="300" r="2"><animate attributeName="cy" values="300;260;300"
+      dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="60" r="1.5"><animate attributeName="cy" values="60;30;60"
+      dur="5.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- border shimmer -->
+  <rect x="4" y="4" width="1172" height="602" rx="24" fill="none"
+    stroke="url(#accentGrad)" stroke-width="1.5" opacity=".65"/>
+
+  <!-- scanline -->
+  <rect x="0" y="0" width="1180" height="4" fill="#22D3EE" opacity=".08">
+    <animate attributeName="y" values="0;606;0" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- LEFT: animated ASCII -->
+  <g transform="translate(34,38)">
+    <rect width="405" height="534" rx="20" fill="#111827" opacity=".72"
+      stroke="rgba(255,255,255,.10)" filter="url(#shadow)"/>
+    <text x="24" y="36" font-family="Consolas,Menlo,monospace"
+      font-size="12.5" fill="#94A3B8">~/profile/about.py</text>
+    <text x="24" y="61" font-family="Consolas,Menlo,monospace"
+      font-size="13" fill="#7C3AED">class <tspan fill="#F8FAFC">Developer:</tspan></text>
+
+    <g transform="translate(14,2)" font-family="Consolas,Menlo,monospace"
+      font-size="10.5" fill="url(#asciiGrad)" filter="url(#smallGlow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 -6;0 0" dur="6s" repeatCount="indefinite"/>
+        <text x="22" y="78" opacity="0"><animate attributeName="opacity" to="1" begin="0.15s" dur=".28s" fill="freeze"/>        .:::::::::.</text>
+<text x="22" y="94" opacity="0"><animate attributeName="opacity" to="1" begin="0.31s" dur=".28s" fill="freeze"/>    .:::------------:::.</text>
+<text x="22" y="110" opacity="0"><animate attributeName="opacity" to="1" begin="0.47s" dur=".28s" fill="freeze"/>  .::------==++++==------::.</text>
+<text x="22" y="126" opacity="0"><animate attributeName="opacity" to="1" begin="0.63s" dur=".28s" fill="freeze"/>.:----==++**##%%%%##**++==----:.</text>
+<text x="22" y="142" opacity="0"><animate attributeName="opacity" to="1" begin="0.79s" dur=".28s" fill="freeze"/>:---==+*#%%%@@@@@@@@%%#*+==---:</text>
+<text x="22" y="158" opacity="0"><animate attributeName="opacity" to="1" begin="0.95s" dur=".28s" fill="freeze"/>---==+*#%@@@@######@@@@%#*+==---</text>
+<text x="22" y="174" opacity="0"><animate attributeName="opacity" to="1" begin="1.11s" dur=".28s" fill="freeze"/>--==+*#@@@@#        #@@@@#*+==--</text>
+<text x="22" y="190" opacity="0"><animate attributeName="opacity" to="1" begin="1.27s" dur=".28s" fill="freeze"/>-==+*%@@@@#            #@@@@%*+==-</text>
+<text x="22" y="206" opacity="0"><animate attributeName="opacity" to="1" begin="1.43s" dur=".28s" fill="freeze"/>==+*%@@@@%              %@@@@%*+==</text>
+<text x="22" y="222" opacity="0"><animate attributeName="opacity" to="1" begin="1.59s" dur=".28s" fill="freeze"/>=+*#@@@@@#              #@@@@@#*+=</text>
+<text x="22" y="238" opacity="0"><animate attributeName="opacity" to="1" begin="1.75s" dur=".28s" fill="freeze"/>+*#%@@@@@%%%%%%%%%%%%%%@@@@@@%#*+</text>
+<text x="22" y="254" opacity="0"><animate attributeName="opacity" to="1" begin="1.91s" dur=".28s" fill="freeze"/>*#%@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*</text>
+<text x="22" y="270" opacity="0"><animate attributeName="opacity" to="1" begin="2.07s" dur=".28s" fill="freeze"/>#%@@@@@@@######    ######@@@@@@@%#</text>
+<text x="22" y="286" opacity="0"><animate attributeName="opacity" to="1" begin="2.23s" dur=".28s" fill="freeze"/>%@@@@@@#                    #@@@@@@%</text>
+<text x="22" y="302" opacity="0"><animate attributeName="opacity" to="1" begin="2.39s" dur=".28s" fill="freeze"/>@@@@@@%      PYTHON          %@@@@@@</text>
+<text x="22" y="318" opacity="0"><animate attributeName="opacity" to="1" begin="2.55s" dur=".28s" fill="freeze"/>@@@@@%       DEVELOPER        %@@@@@</text>
+<text x="22" y="334" opacity="0"><animate attributeName="opacity" to="1" begin="2.71s" dur=".28s" fill="freeze"/>%@@@@@%                    %@@@@@%</text>
+<text x="22" y="350" opacity="0"><animate attributeName="opacity" to="1" begin="2.87s" dur=".28s" fill="freeze"/>#%@@@@@@#              #@@@@@@%#</text>
+<text x="22" y="366" opacity="0"><animate attributeName="opacity" to="1" begin="3.03s" dur=".28s" fill="freeze"/>*#%@@@@@@@%%##    ##%%@@@@@@@%#*</text>
+<text x="22" y="382" opacity="0"><animate attributeName="opacity" to="1" begin="3.19s" dur=".28s" fill="freeze"/>+*#%@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*+</text>
+<text x="22" y="398" opacity="0"><animate attributeName="opacity" to="1" begin="3.35s" dur=".28s" fill="freeze"/> =+*#%@@@@@@@@@@@@@@@@@@@@@@%#*+=</text>
+<text x="22" y="414" opacity="0"><animate attributeName="opacity" to="1" begin="3.51s" dur=".28s" fill="freeze"/>  -==+*#%@@@@@@@@@@@@@@@@%#*+==-</text>
+<text x="22" y="430" opacity="0"><animate attributeName="opacity" to="1" begin="3.67s" dur=".28s" fill="freeze"/>    --==+*#%%@@@@@@%%#*+==--</text>
+<text x="22" y="446" opacity="0"><animate attributeName="opacity" to="1" begin="3.83s" dur=".28s" fill="freeze"/>       .:--==++**++==--:.</text>
+<text x="22" y="462" opacity="0"><animate attributeName="opacity" to="1" begin="3.99s" dur=".28s" fill="freeze"/>           '::::::::'</text>
+      </g>
+    </g>
+
+    <rect x="24" y="496" width="8" height="14" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0;1" dur="1s"
+        begin="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="48" y="507" font-family="Consolas,Menlo,monospace"
+      font-size="11.5" fill="#94A3B8"># practical Python development</text>
+  </g>
+
+  <!-- RIGHT: terminal -->
+  <g transform="translate(462,38)">
+    <rect width="684" height="534" rx="20" fill="#111827" opacity=".78"
+      stroke="rgba(255,255,255,.10)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="684" height="40" rx="20"
+      fill="#111827"/>
+    <circle cx="24" cy="20" r="6" fill="#FF5F56"/>
+    <circle cx="46" cy="20" r="6" fill="#FFBD2E"/>
+    <circle cx="68" cy="20" r="6" fill="#27C93F"/>
+    <text x="342" y="25" text-anchor="middle"
+      font-family="Consolas,monospace" font-size="12" fill="#94A3B8">
+      mohan@portfolio: ~
+    </text>
+
+    <g font-family="Consolas,Menlo,monospace">
+      <text x="34" y="84" font-size="21" fill="#F8FAFC" opacity="0">
+        Hi 👋
+        <animate attributeName="opacity" to="1" begin=".2s" dur=".45s" fill="freeze"/>
+      </text>
+      <text x="34" y="122" font-size="28" font-weight="bold"
+        fill="url(#accentGrad)" opacity="0">
+        I'm Mohan Pavan Kumar
+        <animate attributeName="opacity" to="1" begin=".55s" dur=".5s" fill="freeze"/>
+      </text>
+
+      <!-- animated roles -->
+      <g font-size="17" fill="#22D3EE">
+        <text x="34" y="154" opacity="0">&gt; Python Full Stack Developer_
+          <animate attributeName="opacity" values="0;1;1;0;0"
+            keyTimes="0;.04;.27;.32;1" dur="8s" begin="1s" repeatCount="indefinite"/>
+        </text>
+        <text x="34" y="154" opacity="0">&gt; Backend Developer_
+          <animate attributeName="opacity" values="0;0;0;1;1;0"
+            keyTimes="0;.27;.32;.36;.52;.57" dur="8s" begin="1s" repeatCount="indefinite"/>
+        </text>
+        <text x="34" y="154" opacity="0">&gt; Generative AI Enthusiast_
+          <animate attributeName="opacity" values="0;0;0;0;0;1;1;0"
+            keyTimes="0;.48;.53;.58;.67;.72;.94;1" dur="8s" begin="1s" repeatCount="indefinite"/>
+        </text>
+      </g>
+
+      <!-- sequential profile facts -->
+      <g font-size="13.2" fill="#94A3B8">
+        <text x="34" y="194" opacity="0">🎓 Education: B.Tech CSE · 2022–2026
+          <animate attributeName="opacity" to="1" begin="2s" dur=".4s" fill="freeze"/></text>
+        <text x="34" y="218" opacity="0">📍 Hyderabad, Telangana
+          <animate attributeName="opacity" to="1" begin="2.25s" dur=".4s" fill="freeze"/></text>
+        <text x="34" y="242" opacity="0">🎯 Focus: Python · Django · FastAPI
+          <animate attributeName="opacity" to="1" begin="2.5s" dur=".4s" fill="freeze"/></text>
+        <text x="34" y="266" opacity="0">🧩 APIs · SQL · MySQL · Git · Postman
+          <animate attributeName="opacity" to="1" begin="2.75s" dur=".4s" fill="freeze"/></text>
+      </g>
+
+      <!-- familiar with -->
+      <text x="34" y="304" font-size="14" fill="#F8FAFC" opacity="0">
+        Familiar With
+        <animate attributeName="opacity" to="1" begin="3.1s" dur=".4s" fill="freeze"/>
+      </text>
+      <text x="34" y="328" font-size="12.7" fill="#94A3B8" opacity="0">
+        Generative AI · LangChain · Ollama · Prompt Engineering
+        <animate attributeName="opacity" to="1" begin="3.3s" dur=".4s" fill="freeze"/>
+      </text>
+      <text x="34" y="350" font-size="12.7" fill="#94A3B8" opacity="0">
+        Python automation · Agile collaboration
+        <animate attributeName="opacity" to="1" begin="3.5s" dur=".4s" fill="freeze"/>
+      </text>
+
+      <!-- project -->
+      <text x="34" y="386" font-size="14" fill="#F8FAFC" opacity="0">
+        Featured Project
+        <animate attributeName="opacity" to="1" begin="3.8s" dur=".4s" fill="freeze"/>
+      </text>
+      <text x="34" y="409" font-size="12.8" fill="#22D3EE" opacity="0">
+        Project &amp; Inventory Warehouse Management System
+        <animate attributeName="opacity" to="1" begin="4s" dur=".4s" fill="freeze"/>
+      </text>
+      <text x="34" y="431" font-size="12.2" fill="#94A3B8" opacity="0">
+        Django · Bootstrap · JavaScript · PostgreSQL
+        <animate attributeName="opacity" to="1" begin="4.2s" dur=".4s" fill="freeze"/>
+      </text>
+
+      <!-- certification -->
+      <text x="34" y="466" font-size="14" fill="#F8FAFC" opacity="0">
+        Certifications
+        <animate attributeName="opacity" to="1" begin="4.5s" dur=".4s" fill="freeze"/>
+      </text>
+      <text x="34" y="489" font-size="11.8" fill="#94A3B8" opacity="0">
+        GenAI Foundations · ML with Python · Data Analytics · SQL
+        <animate attributeName="opacity" to="1" begin="4.7s" dur=".4s" fill="freeze"/>
+      </text>
+
+      <text x="34" y="518" font-size="11.8" fill="#94A3B8" opacity="0">
+        ✉ pavan922962@gmail.com
+        <animate attributeName="opacity" to="1" begin="5s" dur=".4s" fill="freeze"/>
+      </text>
+    </g>
+  </g>
+</g>
+</svg>
