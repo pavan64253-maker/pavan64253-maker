@@ -1,3 +1,5 @@
 <p align="center">
-  <img src="./profile-animation.svg" width="100%">
+  <img src="./mohan-pavan-kumar-github-profile.svg"
+       alt="Mohan Pavan Kumar - GitHub Profile"
+       width="100%">
 </p>
