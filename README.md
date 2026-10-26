@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./mohan-pavan-kumar-github-dark.svg"
+  <img src="https://raw.githubusercontent.com/pavan64253-maker/pavan64253-maker/main/mohan-pavan-kumar-github-dark.svg"
        alt="Mohan Pavan Kumar - AI & Automation Developer (Fresher)"
        width="100%">
 </p>
