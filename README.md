@@ -36,7 +36,7 @@ Paste meeting notes on a web page; an n8n workflow sends them to Gemini, which e
 ## 📁 Other Projects
 
 - [**Note-Mind AI**](https://github.com/pavan64253-maker/Note-Mind-Ai): AI note assistant that summarizes text and creates structured notes (Flask, REST APIs, LLM APIs)
-- [**Prompt Engineering Toolkit**](https://github.com/pavan64253-maker/prompt-engineering-toolkit): Python examples on zero-shot, few-shot, chain-of-thought and role-based prompting (Python, Gemini API)
+-[**Prompt Engineering Course**](https://github.com/pavan64253-maker/prompt-engineering-course)
 - **Project Management System**: Django app with task assignment and progress tracking (Django, SQLite)
 
 ---
