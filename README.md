@@ -1,8 +1,8 @@
 # Hi 👋 I'm Mohan Pavan Kumar
 
-**AI & Automation Developer (Fresher)** · Hyderabad, Telangana · B.Tech CSE, 2022–2026
+**Python Full Stack Developer (Fresher)** · Hyderabad, Telangana · B.Tech CSE, 2022–2026
 
-I build small AI automations: Python and JavaScript code, LLM APIs, and n8n workflows that move data between tools.
+I build full-stack web apps with Python (Django, Flask), JavaScript and React, REST APIs, and SQL databases. I also add AI features using LLM APIs and n8n automations.
 
 📧 pavan922962@gmail.com · [LinkedIn](https://linkedin.com/in/partamsetti-mohan-pavan)
 
@@ -13,31 +13,32 @@ I build small AI automations: Python and JavaScript code, LLM APIs, and n8n work
 | | |
 |---|---|
 | **Languages** | Python, JavaScript |
-| **AI / LLMs** | Gemini API, LangChain, Ollama, Prompt Engineering, Gen AI |
-| **Automation & APIs** | n8n, REST APIs, Webhooks, Google Sheets, Gmail |
-| **Frameworks** | Django, Flask |
-| **Databases & Tools** | SQL, MySQL, SQLite, Git, GitHub, Postman |
+| **Frontend** | React JS, HTML5, CSS3, Responsive Design |
+| **Backend** | Django, Flask, REST APIs, Node.js (basic) |
+| **Databases** | PostgreSQL, MySQL, MongoDB, SQLite, SQL |
+| **Tools** | Git, GitHub, Postman |
+| **AI & Automation** | Gemini API, LangChain, Ollama, Prompt Engineering, n8n, Webhooks |
 
 ---
 
 ## ⭐ Featured Project
 
-### [Meeting Notes → Action Items → Reminders](https://github.com/pavan64253-maker/momentum-meeting-action-automation)
-Paste meeting notes on a web page; an n8n workflow sends them to Gemini, which extracts the summary, tasks, owners and deadlines.
+### [Note-Mind AI](https://github.com/pavan64253-maker/Note-Mind-Ai)
+Full-stack AI note assistant that summarizes text and generates structured notes.
 
-- Tasks are saved to Google Sheets and a recap is sent by Gmail
-- Scheduled reminders go out for tasks due today or tomorrow
-- HTML/JavaScript frontend shows the results and a task tracker
+- Python (Flask) REST APIs connected to LLM APIs
+- HTML, CSS and JavaScript frontend consuming JSON from the backend
 
-**Tech:** n8n · Gemini API · Google Sheets · Gmail · JavaScript
+**Tech:** Python · Flask · REST APIs · LLM APIs · HTML · CSS · JavaScript
 
 ---
 
 ## 📁 Other Projects
 
-- [**Note-Mind AI**](https://github.com/pavan64253-maker/Note-Mind-Ai): AI note assistant that summarizes text and creates structured notes (Flask, REST APIs, LLM APIs)
--[**Prompt Engineering Course**](https://github.com/pavan64253-maker/prompt-engineering-course)
-- **Project Management System**: Django app with task assignment and progress tracking (Django, SQLite)
+- **Project Management System**: Django app for project planning, task assignment and progress tracking (Django, SQLite)
+- **Weather Pro App**: Responsive React app that shows live weather data from a public API (React, JavaScript, REST APIs)
+- [**Meeting Notes → Action Items → Reminders**](https://github.com/pavan64253-maker/momentum-meeting-action-automation): Web page + n8n workflow that uses Gemini to extract tasks and owners, saves them to Google Sheets and sends Gmail reminders (n8n, Gemini API, JavaScript)
+- [**Prompt Engineering Course**](https://github.com/pavan64253-maker/prompt-engineering-course)
 
 ---
 
